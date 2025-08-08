@@ -1,0 +1,20 @@
+{
+  "name": "openmusic-consumer",
+  "version": "1.0.0",
+  "description": "OpenMusic Consumer for handling playlist export",
+  "main": "src/consumer.js",
+  "scripts": {
+    "start": "node src/consumer.js",
+    "start-dev": "nodemon src/consumer.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "nodemailer": "^6.6.3",
+    "pg": "^8.6.0",
+    "nanoid": "^3.1.23",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
