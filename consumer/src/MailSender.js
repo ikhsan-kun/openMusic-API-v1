@@ -6,6 +6,7 @@ class MailSender {
     this._transporter = nodemailer.createTransporter({
       host: config.smtp.host,
       port: config.smtp.port,
+      secure: false, // true for 465, false for other ports
       auth: {
         user: config.smtp.user,
         pass: config.smtp.password,

@@ -16,7 +16,6 @@ class ExportsHandler {
     const { id: credentialId } = request.auth.credentials;
     const { targetEmail } = request.payload;
 
-    // Verify playlist ownership
     await this._playlistsService.verifyPlaylistOwner(playlistId, credentialId);
     
     const message = {

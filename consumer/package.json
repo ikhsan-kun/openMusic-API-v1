@@ -1,20 +1,20 @@
 {
-  "name": "consumer",
+  "name": "openmusic-consumer",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "OpenMusic Consumer for handling playlist export",
+  "main": "src/consumer.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/consumer.js",
+    "start-dev": "nodemon src/consumer.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "amqplib": "^0.10.8",
-    "dotenv": "^17.2.1",
-    "nanoid": "^5.1.5",
-    "nodemailer": "^7.0.5",
-    "pg": "^8.16.3"
+    "amqplib": "^0.8.0",
+    "nodemailer": "^6.6.3",
+    "pg": "^8.6.0",
+    "nanoid": "^3.1.23",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
   }
 }
